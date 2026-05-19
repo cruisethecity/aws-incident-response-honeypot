@@ -17,7 +17,7 @@ Engineered and deployed a Node.js script to simulate an external threat actor.
 ## Phase 3: SOC Telemetry & Threat Detection
 Ingested VPC Flow Logs into Splunk Enterprise to establish a Security Operations Center (SOC) dashboard and identify Indicators of Compromise (IoCs).
 
-![Splunk SOC Dashboard](splunk dashboard.png)
+![Splunk SOC Dashboard](splunk%20dashboard.png)
 
 **Incident Report Findings:**
 * **Event Volume:** 15,025 blocked network events.

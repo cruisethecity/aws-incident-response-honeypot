@@ -1,0 +1,6 @@
+# Example Terraform variable values file
+# Copy this to terraform.tfvars and fill in your own secrets.
+
+# PostgreSQL database password
+# Do not commit the real password to source control.
+db_password = "replace_with_your_secure_password"

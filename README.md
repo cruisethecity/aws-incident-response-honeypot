@@ -4,7 +4,7 @@
 This project demonstrates a complete cloud security incident response lifecycle. I provisioned an AWS infrastructure using Terraform, executed a simulated brute-force attack via Node.js, established SOC monitoring with Splunk, and applied infrastructure-as-code remediation to secure the compromised environment.
 
 ## Phase 1: Cloud Architecture Provisioning
-Deployed a custom AWS Virtual Private Cloud (VPC) configured to capture and log network telemetry.
+Deployed a custom AWS Virtual Private Cloud configured to capture and log network telemetry.
 * **Infrastructure:** Custom VPC, Public/Private Subnets, and an Internet Gateway.
 * **Resource:** Amazon RDS PostgreSQL database temporarily configured with `publicly_accessible = true` to serve as the initial attack surface.
 * **Logging:** AWS VPC Flow Logs configured for automated routing to an S3 bucket for SIEM ingestion.
@@ -12,10 +12,10 @@ Deployed a custom AWS Virtual Private Cloud (VPC) configured to capture and log 
 ## Phase 2: Attack Simulation
 Engineered and deployed a Node.js script to simulate an external threat actor.
 * Generated sustained authentication requests to test logging and monitoring thresholds.
-* Targeted PostgreSQL (Port 5432) and SSH (Port 22).
+* Targeted Port 5432 and Port 22.
 
 ## Phase 3: SOC Telemetry & Threat Detection
-Ingested VPC Flow Logs into Splunk Enterprise to establish a Security Operations Center (SOC) dashboard and identify Indicators of Compromise (IoCs).
+Ingested VPC Flow Logs into Splunk Enterprise to establish a Security Operations Center dashboard and identify Indicators of Compromise.
 
 ![Splunk SOC Dashboard](splunk%20dashboard.png)
 
